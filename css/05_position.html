@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .p1{
+            height: 800vh;
+            width: 80vw;
+            background-color: rgba(102, 168, 226, 0.668);
+            color: chocolate;
+            font-size: large;
+        }
+
+        #my-element{
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            background-color: transparent;
+            border: 2px solid black;
+        }
+
+        #para3{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: lightcyan;
+            border: 2px solid black;
+        }
+
+        #para4{
+            position: sticky;
+            top: 0;
+            border: 2px solid black;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="p1">
+        <p>Paragraph1</p>
+        <p id="my-element">I am Absolute</p>
+        <p id="para3">I am fixed</p>
+          <p id="para4">I am Sticky</p>
+    </div>
+    <!-- Absolute position :- value hamesha apne realtive parent ke andar hi ghumti he means parent ko relative banana he.. nh to vo browsor ko parent manega -->
+     <!-- Sticky Position :- value hamesha static hi rahegi but jab scroll larenge tab vo fixed ki trh act karega.. -->
+</body>
+</html>

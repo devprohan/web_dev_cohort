@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Model</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      .content {
+        height: 100px;
+        width: 100px;
+        border: 7px solid black;
+        padding: 20px;
+        margin:20px ;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="content">Piyush Sir</div>
+    <div class="content">Hitesh Sir</div>
+    <br />
+    <br />
+    <p style="color: red; background-color: black; font-size: larger">
+      By default property is content box :- {total width = content width + left
+      padding + right padding + left border + right border total height =
+      content height + top padding + bottom padding + top border + bottom
+      border}
+    </p>
+
+    <p />
+
+    <p style="background-color: black; color: goldenrod">
+      In box-sizing : border-box :- total width = (declared width) total height
+      = (declared height)
+    </p>
+  </body>
+</html>
