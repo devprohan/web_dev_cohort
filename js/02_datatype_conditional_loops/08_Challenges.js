@@ -11,6 +11,7 @@ console.log(teas);
 // Problem: Add "Chamomile Tea" to the existing list of teas
 teas.push("Chamomile Tea");
 
+
 // Problem: Remove "Oolong Tea" from the list of teas
 const index = teas.indexOf("Oolong tea");
 console.log(index);
