@@ -17,5 +17,5 @@ let p2 = {
 p2.fname = "Piyush";
 p2.address.h = "Hacked"; // cannot hack p1's address object
 
-console.log(p2);
+console.log(p2); // piyush ch hacked 1
 console.log(p1);

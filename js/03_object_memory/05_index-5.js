@@ -9,5 +9,5 @@ let p2 = {
 
 p2.fname = "Piyush";
 
-console.log(p2);
+console.log(p2); // piyush ch
 console.log(p1);

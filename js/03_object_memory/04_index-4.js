@@ -11,5 +11,5 @@ let p2 = {
 p2.fname = "Piyush";
 p2.lname = "Garg";
 
-console.log(p2);
+console.log(p2); //piyush garg
 console.log(p1);

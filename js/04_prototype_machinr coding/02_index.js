@@ -1,6 +1,5 @@
 // Create an New Prototype which can add in prototype section..
-// It called As Polyfills imp for interview perspective ..
-
+// It called As Polyfills imp for Interview perspective ..
 
 // Error: .forEach function does not exist on arr variable
 
@@ -18,6 +17,8 @@ if (!Array.prototype.myForEach) {
 }
 
 
+// Signature .map
+// Return? - New Array, Each ele Iterate, userFn
 
 if (!Array.prototype.myMap) {
   Array.prototype.myMap = function (userFn) {
@@ -31,7 +32,6 @@ if (!Array.prototype.myMap) {
     return result;
   };
 }
-
 
 if (!Array.prototype.myFilter) {
   Array.prototype.myFilter = function (userFn) {
@@ -49,7 +49,6 @@ if (!Array.prototype.myFilter) {
 
 const arr = [1, 2, 3, 4, 5, 6];
 
-
 const ret = arr.forEach(function (value, index) {
   console.log(`Value at Index ${index} is ${value}`);
 });
@@ -61,9 +60,6 @@ const myRet = arr.myForEach(function (value, index) {
 });
 
 console.log(`My Ret is`, myRet);
-
-// Signature .map
-// Return? - New Array, Each ele Iterate, userFn
 
 const n = arr.map((e) => e * 2);
 const n2 = arr.myMap((e) => e * 3);

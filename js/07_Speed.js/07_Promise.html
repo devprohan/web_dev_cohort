@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="items"></ul>
+    <script>
+      const items = document.getElementById("items");
+
+      function renderToScreen(obj) {
+        const products = obj.data.data; // here we can fetch data from the api and convert into json and apply for each loop on the data
+        console.log(products);
+        products.forEach((product) => {
+          const li = document.createElement("li"); // here create list
+          li.innerText = product.title; // here we put innertext into the list
+          items.appendChild(li); // here list append into the items
+        });
+      }
+
+      fetch("https://api.freeapi.app/api/v1/public/randomproducts")
+        .then((response) => response.json()) // here we convert the api json to object format
+        .then(renderToScreen) // here we directly callback the function
+        .catch((err) => {})
+        .finally(() => {});
+    </script>
+  </body>
+</html>

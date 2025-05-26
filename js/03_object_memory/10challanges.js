@@ -42,6 +42,8 @@ const myTeas = {
 
 // Problem: Create a copy of the tea object
 const teaCopy = { ...myTeas }; // shallow copy
+// console.log(teaCopy);
+
 const newObj = new Object(myTeas);
 teaCopy.greenTea.cups.one = 4;
 console.log(newObj);
