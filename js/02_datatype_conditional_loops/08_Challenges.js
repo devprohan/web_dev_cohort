@@ -22,6 +22,8 @@ if (index > -1) {
 
 // Problem: Filter the list to only include teas that are caffeinated
 const caffeinatedTeas = teas.filter((tea) => tea !== "Herbal Tea");
+console.log(caffeinatedTeas);
+
 
 // Problem: Sort the list of teas in alphabetical order
 const test = ["🐓", "🥚"];
@@ -39,6 +41,8 @@ for (let i = 0; i < teas.length; i++) {
     caffeinatedMyTeas++;
   }
 }
+console.log(caffeinatedMyTeas);
+
 
 // Problem: Use a for loop to create a new array with all tea names in uppercase
 const uppercaseTeas = [];

@@ -10,30 +10,27 @@ prepareChai("Masala Chai");
 prepareChai("Ginger Chai");
 
 /*
-Ek online store mein, agar customer ka total bill amount 1000 se zyada hai, toh 10% discount milta hai. Nahi toh, full amount pay karna padta hai.
-
+# Ek online store mein, agar customer ka total bill amount 1000 se zyada hai, toh 10% discount milta hai. Nahi toh, full amount pay karna padta hai.
 */
 
 function calculateTotal(amount) {
   // convert to number
-//   if (amount > 1000) {
-//     return amount * 0.9;
-//   }
-//   return amount;
+  // if (amount > 1000) {
+  //   return amount * 0.9;
+  // }
+  // return amount;
 
-    return amount > 100 ? amount * 0.9 : amount
+    return amount > 1000 ? amount * 0.9 : amount   //ternary Operator ..
 }
 
 
 
 let finalBill = calculateTotal(1200);
-// console.log(finalBill);
+console.log(finalBill);
 // console.log(calculateTotal(1300));
 
 /*
 Ek traffic light system mein, agar light "red" hai, toh "Stop" print karo. Agar "yellow" hai, toh "Slow down" print karo. Agar "green" hai, toh "Go" print karo.
-
-
 */
 
 function trafficLight(color) {
@@ -54,11 +51,13 @@ function trafficLight(color) {
 
 trafficLight("yellow");
 
-function checktruthyValue(value) {
+// Check if value is truthy or Falsy ..
+const checktruthyValue = (value) =>{
   if (value) {
-    console.log("Truthy");
-  } else {
-    console.log("Falsy");
+    console.log('Truthy');
+  }else{
+    console.log('Falsy');
+    
   }
 }
 
@@ -71,11 +70,10 @@ checktruthyValue([1, 2, 3])
 
 
 function login(username, password){
-    if(username === 'admin' && (password === "1234" || loginIp == "127")){
+    if(username === 'admin' && (password === "1234" || loginIp === "127")){  // Use parenthesis for best production code practices..
         console.log("Login successful");
         
     } else {
-        console.log("Invalid credentials");
-        
+        console.log("Invalid credentials"); // Credentials means :- usename + Password 
     }
 }

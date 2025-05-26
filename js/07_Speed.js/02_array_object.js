@@ -6,7 +6,7 @@ let chaiTypes = ["Masala Chai", "Ginger chai", "Green Tea", "Lemon Tea"];
 
 chaiTypes.push("Herbal Tea");
 const data = chaiTypes.pop();
-console.log(data); //
+console.log(data);
 
 let index = chaiTypes.indexOf("Green-Tea");
 console.log(index);
@@ -46,8 +46,15 @@ let updatedChaiRecepie = {
   instruction: "Boil water, add tea leaves, mil, sugar, spices with some love",
 };
 
-let { name, myingredients } = chaiRecipe;
-let [firstChai, secondChai] = chaiTypes;
+// # Destructuring :-
 
-console.log(myingredients);
+let {name, ingredients} = chaiRecipe; // object ki Destructuring
+let [firstChai, secondChai] = chaiTypes; // array ki Destructuring
+
+console.log(ingredients);
 console.log(secondChai);
+
+const fruits = [1, 2, 3, 4];
+
+console.log(fruits[1]);
+console.log(fruits[-1]);

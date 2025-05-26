@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+      color: azure;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 10px solid whitesmoke;
+      border-radius: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    button {
+      margin: 25px;
+      padding: 5px 10px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+  </style>
+  <body>
+    <h1>BMI Calculator</h1>
+
+    <div class="container">
+      <h3>height (CM)</h3>
+      <input placeholder="Height" />
+
+      <h3>Weight (KG)</h3>
+      <input placeholder="Weight" />
+
+      <button>Calculate BMI</button>
+
+      <h4>Your BMI :</h4>
+      <input type="text">
+    
+      <h5>UnderWeight :- < 18.5 </h5>
+      <h5>NormalWeight :- 18.5 - 24.9 </h5>
+      <h5>OverWeight :- 25 - 29.9 </h5>
+      <h5>Obesity :- BMI of 30 or greater </h5>
+    </div>
+  </body>
+</html>

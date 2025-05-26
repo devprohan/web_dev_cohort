@@ -5,8 +5,8 @@ let salesData = [
   { product: "Keyboard", price: 80 },
 ];
 
-let totalSales = salesData.reduce((acc, sale) => acc + sale.price, 0);
-// console.log(totalSales);
+let totalSales = salesData.reduce((acc,sales) => sales.price + acc,0)
+console.log(totalSales);
 
 // Items less than 50
 let inventory = [
@@ -16,10 +16,10 @@ let inventory = [
   { name: "Widget D", stock: 70 },
 ];
 
-let lowStockItems = inventory.filter((item) => {
-  return item.stock < 50;
-});
-// console.log(lowStockItems);
+let lowStockItems = inventory.filter((items) => {
+  return items.stock > 50 ;
+})
+console.log(lowStockItems);
 
 let userActivity = [
   { user: "Alice", activityCount: 45 },
@@ -32,3 +32,7 @@ let mostActiveUser = userActivity.reduce((maxUser, user) =>
   user.activityCount > maxUser.activityCount ? user : maxUser
 );
 console.log(mostActiveUser);
+
+
+const fruits = [1, 2, 3, 4, 5]
+console.log(fruits[1]);

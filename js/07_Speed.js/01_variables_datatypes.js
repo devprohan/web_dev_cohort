@@ -47,12 +47,13 @@ let y = 10;
 console.log(Math.random() * 10);
 
 
+
 let firstName = "hitesh"
 let lastName = "Choudhary"
 
-let fullName = firstName + " " + lastName //hiteshchoudhary
+let fullName = firstName + " " + lastName  // hiteshchoudhary
 
-let message = "Hello World"
+let message = "Hello World" ;
 
 console.log(message.toUpperCase());
 console.log(message.indexOf("W"));
