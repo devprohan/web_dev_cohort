@@ -56,7 +56,7 @@ console.log(negArr[-3]);
 console.log(negArr[-4]);
 negArr[-1] = 22;
 console.log(negArr);
-console.log(arr); // Also Change In the Original Array..
+console.log(arr); // Also Change In the Original Array.. because we indirectly target on original array 
 
 
 

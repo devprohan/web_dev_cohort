@@ -38,7 +38,7 @@ let person2 = {
   personsName: "hitesh",
 };
 
-person1.greet.call(person2); // call change context of the person 1 to persin 2 name
+person1.greet.call(person2); // call change context of the person 1 to person 2 name
 
 
 // Bind() :- Returns a new function with a specified this value, which can be called later.

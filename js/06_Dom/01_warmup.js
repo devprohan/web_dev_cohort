@@ -27,7 +27,6 @@ function add(a,b){
 
 console.log(add(5,4));
 
-
 // Function Expression :-
 const substract = function(a,b){
     return a - b ;

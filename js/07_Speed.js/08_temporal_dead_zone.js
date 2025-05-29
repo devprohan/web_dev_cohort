@@ -1,4 +1,4 @@
-// TDZ:-# Temporal Dead Zone (TDZ) :- The term to describe the state where variables are un-reachable .The Re in scope ,but They aren't declared..
+// TDZ:-# Temporal Dead Zone (TDZ) :- The term to describe the state where variables are un-reachable .The are in scope ,but They aren't declared..
 console.log("Age is", age);
 
 // Dead Zone 

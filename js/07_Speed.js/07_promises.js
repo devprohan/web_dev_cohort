@@ -36,9 +36,9 @@ Promise.resolve().then(function p2() {
 
 // Promise = In Js promise is an object that represents the eventual/ekdam se result of asynchronous operation
 // Promise be like: Abhi promise lele value nhi he ; jab milegi tab de dunga
-// Sync operation :- On the spot hoga vo
-// Async operation :- Jo thoda time lega vo
-// JSON :- convert response from json data into object IMP: It also a Async so it have take .then
+// Sync operation :- On the spot hoga vo , it also called block code because it runs line by line e.g :- cbse result, govt website easliy block because run on sync
+// Async operation :- Jo thoda time lega vo , it also called unblock code because it runs async, e.g:- google 
+// JSON :- convert response from json data into object IMP: It also a Async so it have take .then()
 
 // Three States of Promises :
 // 1. Pending :- When Promise is Created and opern hasn't start

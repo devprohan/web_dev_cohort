@@ -4,7 +4,7 @@ const teas = [
   "Black tea",
   "Oolong tea",
   "White tea",
-  "Herbal Tea",
+  "Herbal Tea" ,
 ];
 console.log(teas);
 

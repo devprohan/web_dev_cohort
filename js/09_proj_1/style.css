@@ -24,6 +24,11 @@ body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
 }
 
+.clock-container:hover {
+  transition: all 2s ease-in;
+  transform: scale(1.1);
+}
+
 /* Time styling */
 #time {
   font-size: 5rem;
