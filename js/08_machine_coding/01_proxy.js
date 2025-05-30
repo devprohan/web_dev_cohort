@@ -23,7 +23,7 @@ const proxyUser = new Proxy(user, {
     return target[prop];
   },
 });
-
+// console.log(proxyUser);
 // console.log(proxyUser.password);
 
 arr = [1, 2, 3, 4, 5];
