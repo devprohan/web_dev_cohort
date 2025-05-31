@@ -38,7 +38,7 @@ console.log(x());
 // Closure : In JS Closure is a function that has access to the variables of its outer function even after outer function has finished executing
 // It be like marne se phle Information de gya
 
-// DrawBack Of closure : Memory Leak, because its parent function refrence Does not Delete by garbage collector so Storage Of Memore increses cause to memory leak so we can use variable = Null after workdone..
+// DrawBack Of closure : Memory Leak, because its parent function refrence Does not Delete by garbage collector so Storage Of Memory increses cause to memory leak so we can use variable = Null after workdone..
 
 function createInstance() {
   let store = {

@@ -15,7 +15,7 @@ if (!Array.prototype.myForEach) {
     // here we get callback to call all items and index of current array
     for (i = 0; i < this.length; i++) {
       // here this is used for denote current array length
-      cb(this[i], i); // this[i] for curritem and i for index
+      cb(this[i], i); // this[i] for curr-item and i for index
     }
   };
 }
